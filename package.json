@@ -1,0 +1,31 @@
+{
+  "name": "app_rentacar_SOLID",
+  "version": "1.0.0",
+  "description": "mejora de la aplicacion rent a car maule , en la cual se intenta aplicar las mejorar practicas que propone DDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomekop007/app_rentacar_SOLID.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomekop007/app_rentacar_SOLID/issues"
+  },
+  "homepage": "https://github.com/nomekop007/app_rentacar_SOLID#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "sequelize": "^5.21.11",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "compression": "^1.7.4",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
