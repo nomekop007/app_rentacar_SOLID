@@ -30,7 +30,8 @@
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^5.21.11"
+    "sequelize": "^5.21.11",
+    "sequelize-typescript": "^2.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",

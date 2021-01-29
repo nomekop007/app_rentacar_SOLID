@@ -1,8 +1,6 @@
 import * as bodyParser from "body-parser";
 import express, { Express } from "express";
-import { Sequelize } from "sequelize";
-import { UsuarioInstance } from "./modules/usuarios/models/Usuario.instance";
-
+import { Sequelize } from "sequelize-typescript";
 class App {
 
     public app: Express = express();
@@ -24,9 +22,9 @@ class App {
 
     private async initDatabase() {
         this.dbClient = new Sequelize("mysql://root@localhost/bd_rentacar_solid", {
-            logging: false
+            logging: false,
+            models: [__dirname + "/../models"]
         });
-        UsuarioInstance(this.dbClient);
 
         this.dbClient.sync({ alter: true }).then(() => {
             console.log("tablas sincronizadas");
