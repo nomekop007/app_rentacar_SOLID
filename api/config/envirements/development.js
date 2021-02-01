@@ -5,6 +5,7 @@ module.exports = {
         password: 'root',
         database: 'bd_rentacar_dev',
         host: 'localhost',
-        dialect: 'mysql'
+        dialect: 'mysql',
+        /*   logging: false */
     }
 }

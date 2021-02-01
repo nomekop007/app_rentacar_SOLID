@@ -5,10 +5,15 @@ const db = {};
 
 const sequelize = new Sequelize(config.database, config.username, config.password, config);
 
-const usuarioEntity = require("../../../contexts/usuarios/dataAccess/entities/usuario.entity");
+const usuarioEntity = require("../../../contexts/usuarios/dataAccess/usuario.entity");
+const rolesEntity = require("../../../contexts/roles/dataAccess/rol.entity");
+const sucursalEntity = require("../../../contexts/sucursales/dataAcess/sucursal.entity");
 
 
 db.usuarios = usuarioEntity(sequelize, Sequelize);
+db.roles = rolesEntity(sequelize, Sequelize);
+db.sucursales = sucursalEntity(sequelize, Sequelize);
+
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

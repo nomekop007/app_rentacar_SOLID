@@ -11,11 +11,13 @@ const db = require('../database/sequelize');
 const containerUsuario = require('./usuario/usuario.injection');
 
 container
-    .register({ db: asValue(db) })
-    .register({ config: asValue(config) })
-    .register({ app: asClass(StarUp).singleton() })
-    .register({ server: asClass(Server).singleton() })
-    .register({ router: asFunction(Routes).singleton() })
+    .register({
+        db: asValue(db),
+        config: asValue(config),
+        app: asClass(StarUp).singleton(),
+        server: asClass(Server).singleton(),
+        router: asFunction(Routes).singleton()
+    })
 
 container = containerUsuario(container);
 

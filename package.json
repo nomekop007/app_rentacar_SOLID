@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nomekop007/app_rentacar_SOLID#readme",
   "dependencies": {
+    "automapper-js": "^1.1.0",
     "awilix": "^4.3.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
@@ -24,7 +25,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0",
-    "structure": "^2.0.1"
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.5.0"
   }
 }
